@@ -14,6 +14,6 @@ public class TodoService {
 	@Autowired // inject
 	private TodoRepository todoRepo; 
 	public List<TodoItem> fetchAllTodoItems () {
-		return todoRepo.fetchAllTodoItems();
+		todoRepo.fetchAllTodoItems();
 	}
 }
