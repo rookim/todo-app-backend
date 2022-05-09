@@ -8,12 +8,13 @@ import org.springframework.stereotype.Service;
 import com.rookim.todoapp.domain.TodoItem;
 import com.rookim.todoapp.repository.TodoRepository;
 
+// annotation
 @Service
 public class TodoService {
 	
 	@Autowired // inject
 	private TodoRepository todoRepo; 
 	public List<TodoItem> fetchAllTodoItems () {
-		todoRepo.fetchAllTodoItems();
+		return todoRepo.fetchAllTodoItems();
 	}
 }
